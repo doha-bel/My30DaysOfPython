@@ -42,4 +42,14 @@ yiga_treasures = {"rubies","banana","amber","weapons"}
 print(f"i can eat from the yiga clan their {foods.intersection(yiga_treasures)}")
 
 
-##### rani 7absa f super set w sub set !!!!
+# subset and superset 
+things_id_eat = {"orange","Hylianshroom"}
+print(f"are the things i'd eat a subset of food? {things_id_eat.issubset(foods)}")
+
+# diffrence between two sets 
+print(f"the diffrence between things id eat and foods is {foods.difference(things_id_eat)}")
+
+# difference symmetrique : (A\B) ∪ (B\A)
+print(f"the SYMMETRIQUE diffrence between things id eat and foods is {things_id_eat.symmetric_difference(foods)}")
+
+# disjoint sets are sets that have no commun item : set1.isdisjoint(set2)
