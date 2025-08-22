@@ -53,3 +53,43 @@ print(f"the diffrence between things id eat and foods is {foods.difference(thing
 print(f"the SYMMETRIQUE diffrence between things id eat and foods is {things_id_eat.symmetric_difference(foods)}")
 
 # disjoint sets are sets that have no commun item : set1.isdisjoint(set2)
+
+
+#### EXERCISES LETSGOOO ####
+
+# sets
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+
+print(f"i have {len(it_companies)} company")
+it_companies.add("Twitter")
+print(it_companies)
+it_companies.update(["Nintendo","Sony"])
+print(it_companies)
+it_companies.remove("Sony")
+print(it_companies)
+
+print(A.union(B))
+print(B.union(A))
+print(A.intersection(B))
+print(A.issubset(B))
+print(A.isdisjoint(B))
+print(A.symmetric_difference(B))
+del A,B
+
+set_ages = set(age)
+print(set_ages,len(set_ages),len(age))
+"""
+the diffrence between a string, list, tuple, and set:
+a string is an array of charachters, can be changed, can be indexed
+a list is a array of items or objects that can be changed and indexed, and you can add stuff to it
+tuple cannot be changed once created, can be indexed tho
+a set cannot be indexed cz there is no order, no item exists twice, although you treat it like a maths set
+"""
+sen = "I am a teacher and I love to inspire and teach people."
+sen_set = set(sen)
+print(sen_set) # return the unique charachters, for words :
+unique_words = set(sen.split(" "))
+print(len(unique_words)) # LETSGOOO I DIDNT GIVE UP 
